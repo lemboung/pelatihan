@@ -31,7 +31,7 @@ const { items, title } = Astro.props;
     margin: 0;
     color: var(--color-text, #1a1a2e);
   }
-  .slide--dark .checklist__title {
+  :global(.slide--dark) .checklist__title {
     color: #fff;
   }
   .checklist__list {
@@ -51,7 +51,7 @@ const { items, title } = Astro.props;
     background: var(--color-surface, #f0f2f5);
     font-size: 0.95rem;
   }
-  .slide--dark .checklist__item {
+  :global(.slide--dark) .checklist__item {
     background: rgba(255, 255, 255, 0.1);
   }
   .checklist__icon {
@@ -69,7 +69,7 @@ const { items, title } = Astro.props;
   .checklist__text {
     color: var(--color-text, #1a1a2e);
   }
-  .slide--dark .checklist__text {
+  :global(.slide--dark) .checklist__text {
     color: rgba(255, 255, 255, 0.9);
   }
   .checklist__item--done .checklist__icon {

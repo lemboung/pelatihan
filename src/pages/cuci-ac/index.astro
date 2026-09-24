@@ -1,21 +1,24 @@
 ---
-import TrainingLayout from '../layouts/TrainingLayout.astro';
-import Slide from '../components/Slide.astro';
-import SlideHeader from '../components/SlideHeader.astro';
-import ImageText from '../components/ImageText.astro';
-import StepList from '../components/StepList.astro';
-import Checklist from '../components/Checklist.astro';
-import WarningBox from '../components/WarningBox.astro';
-import Comparison from '../components/Comparison.astro';
-import IconGrid from '../components/IconGrid.astro';
-import Card from '../components/Card.astro';
-import Tag from '../components/Tag.astro';
-import Progress from '../components/Progress.astro';
+import TrainingLayout from '../../layouts/TrainingLayout.astro';
+import Slide from '../../components/Slide.astro';
+import SlideHeader from '../../components/SlideHeader.astro';
+import ImageText from '../../components/ImageText.astro';
+import StepList from '../../components/StepList.astro';
+import Checklist from '../../components/Checklist.astro';
+import WarningBox from '../../components/WarningBox.astro';
+import Comparison from '../../components/Comparison.astro';
+import IconGrid from '../../components/IconGrid.astro';
+import Card from '../../components/Card.astro';
+import Tag from '../../components/Tag.astro';
+import Progress from '../../components/Progress.astro';
 
 const totalSlides = 23;
 ---
 
-<TrainingLayout title="Pelatihan Praktik Cuci AC Split">
+<TrainingLayout
+  title="Pelatihan Praktik Cuci AC Split"
+  description="Panduan praktis untuk teknisi pemula dalam membersihkan AC split secara aman dan efektif."
+>
 
   <!-- SLIDE 1: Cover -->
   <Slide id="cover" bg="dark">
@@ -546,6 +549,7 @@ const totalSlides = 23;
     gap: 1rem;
     padding: 1rem 1.25rem;
     background: var(--color-surface);
+    color: var(--color-text, #1a1a2e);
     border-radius: 10px;
     border: 1px solid var(--color-border);
     transition: transform 0.2s, box-shadow 0.2s;

@@ -42,10 +42,10 @@ const { title, subtitle, badge, align = 'left' } = Astro.props;
     margin: 0;
     color: var(--color-text);
   }
-  .slide--dark .slide-header__title {
+  :global(.slide--dark) .slide-header__title {
     color: #fff;
   }
-  .slide--accent .slide-header__title {
+  :global(.slide--accent) .slide-header__title {
     color: #fff;
   }
   .slide-header__subtitle {
@@ -54,7 +54,7 @@ const { title, subtitle, badge, align = 'left' } = Astro.props;
     margin: 0.5rem 0 0;
     line-height: 1.5;
   }
-  .slide--dark .slide-header__subtitle {
+  :global(.slide--dark) .slide-header__subtitle {
     color: rgba(255,255,255,0.7);
   }
 

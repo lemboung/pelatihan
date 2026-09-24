@@ -1,0 +1,281 @@
+---
+const trainings = [
+  {
+    title: 'Pelatihan Praktik Cuci AC Split',
+    description: 'Panduan praktis untuk teknisi pemula dalam membersihkan AC split secara aman dan efektif.',
+    href: '/cuci-ac',
+    icon: '🔧',
+    tag: 'AC Training',
+    status: 'live' as const,
+  },
+  {
+    title: 'Service Motor Matic',
+    description: 'Materi pelatihan servis berkala motor matic: oli, filter, CVT, dan pemeriksaan umum.',
+    href: '/service-motor-matic',
+    icon: '🏍️',
+    tag: 'Otomotif',
+    status: 'soon' as const,
+  },
+];
+---
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Koleksi materi pelatihan interaktif untuk teknisi pemula - cuci AC, service motor matic, dan lainnya." />
+  <meta property="og:title" content="Pelatihan - Materi Pelatihan Interaktif" />
+  <meta property="og:description" content="Koleksi materi pelatihan interaktif untuk teknisi pemula." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1565c0" />
+  <title>Pelatihan - Materi Pelatihan Interaktif</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-primary: #1565c0;
+      --color-primary-light: #1e88e5;
+      --color-accent: #ff6f00;
+      --color-text: #1a1a2e;
+      --color-text-light: #f0f0f5;
+      --color-text-muted: #8a8aab;
+      --color-bg-dark: #1a1a2e;
+      --color-bg-light: #f5f7fa;
+      --color-border: rgba(255, 255, 255, 0.08);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    html {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--color-text-light);
+      background: var(--color-bg-dark);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(21, 101, 192, 0.35), transparent),
+        var(--color-bg-dark);
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      background: rgba(21, 101, 192, 0.2);
+      border: 1px solid rgba(21, 101, 192, 0.5);
+      color: var(--color-primary-light);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin: 0 0 1rem;
+      color: #fff;
+    }
+
+    .hero h1 span {
+      color: var(--color-primary-light);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      flex: 1;
+      align-content: start;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--color-border);
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card--live:hover {
+      transform: translateY(-4px);
+      border-color: rgba(21, 101, 192, 0.6);
+      background: rgba(21, 101, 192, 0.08);
+    }
+
+    .card--soon {
+      opacity: 0.55;
+      cursor: default;
+    }
+
+    .card__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .card__icon {
+      font-size: 1.75rem;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: rgba(21, 101, 192, 0.2);
+      border: 1px solid rgba(21, 101, 192, 0.35);
+    }
+
+    .card__status {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    .card__status--live {
+      background: rgba(46, 160, 67, 0.15);
+      border: 1px solid rgba(46, 160, 67, 0.5);
+      color: #4ade80;
+    }
+
+    .card__status--soon {
+      background: rgba(255, 111, 0, 0.12);
+      border: 1px solid rgba(255, 111, 0, 0.45);
+      color: #ffb74d;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--color-text-muted);
+      margin: 0;
+      flex: 1;
+    }
+
+    .card__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-primary-light);
+    }
+
+    .card--soon .card__cta {
+      color: var(--color-text-muted);
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        padding: 2.5rem 1.25rem;
+      }
+
+      .card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero__badge">📚 Materi Pelatihan</div>
+      <h1>Pelatihan <span>Praktik</span></h1>
+      <p>Koleksi materi pelatihan interaktif untuk teknisi pemula. Pilih materi untuk memulai presentasi.</p>
+    </header>
+
+    <main class="grid">
+      {trainings.map((t) => (
+        t.status === 'live' ? (
+          <a class="card card--live" href={t.href}>
+            <div class="card__top">
+              <div class="card__icon">{t.icon}</div>
+              <span class="card__status card__status--live">Tersedia</span>
+            </div>
+            <h2>{t.title}</h2>
+            <p>{t.description}</p>
+            <span class="card__cta">Mulai materi →</span>
+          </a>
+        ) : (
+          <div class="card card--soon">
+            <div class="card__top">
+              <div class="card__icon">{t.icon}</div>
+              <span class="card__status card__status--soon">Segera Hadir</span>
+            </div>
+            <h2>{t.title}</h2>
+            <p>{t.description}</p>
+            <span class="card__cta">Segera hadir</span>
+          </div>
+        )
+      ))}
+    </main>
+
+    <footer>© 2026 Pelatihan · Materi pelatihan interaktif</footer>
+  </div>
+</body>
+</html>
