@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#f8f9fa"/>
+
+  <text x="500" y="42" text-anchor="middle" fill="#1a1a2e" font-size="28" font-weight="bold" font-family="sans-serif">Common Mistakes to Avoid</text>
+
+  <!-- Mistake 1 -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="450" height="120" rx="12" fill="white" stroke="#ef5350" stroke-width="2"/>
+    <rect x="0" y="0" width="10" height="120" rx="5" fill="#ef5350"/>
+    <text x="35" y="40" fill="#c62828" font-size="30">✕</text>
+    <text x="75" y="35" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Semprot air terlalu deras</text>
+    <text x="75" y="62" fill="#888" font-size="13" font-family="sans-serif">Merusak sirip evaporator yang tipis</text>
+    <text x="75" y="85" fill="#888" font-size="13" font-family="sans-serif">Gunakan tekanan rendah (mist spray)</text>
+  </g>
+
+  <!-- Mistake 2 -->
+  <g transform="translate(520, 70)">
+    <rect x="0" y="0" width="450" height="120" rx="12" fill="white" stroke="#ef5350" stroke-width="2"/>
+    <rect x="0" y="0" width="10" height="120" rx="5" fill="#ef5350"/>
+    <text x="35" y="40" fill="#c62828" font-size="30">✕</text>
+    <text x="75" y="35" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Tidak mematikan listrik</text>
+    <text x="75" y="62" fill="#888" font-size="13" font-family="sans-serif">Risiko sengatan listrik tinggi</text>
+    <text x="75" y="85" fill="#888" font-size="13" font-family="sans-serif">Selalu cabut steker sebelum bekerja</text>
+  </g>
+
+  <!-- Mistake 3 -->
+  <g transform="translate(30, 210)">
+    <rect x="0" y="0" width="450" height="120" rx="12" fill="white" stroke="#ef5350" stroke-width="2"/>
+    <rect x="0" y="0" width="10" height="120" rx="5" fill="#ef5350"/>
+    <text x="35" y="40" fill="#c62828" font-size="30">✕</text>
+    <text x="75" y="35" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Tidak menggunakan washing bag</text>
+    <text x="75" y="62" fill="#888" font-size="13" font-family="sans-serif">Air mengotori dinding &amp; lantai</text>
+    <text x="75" y="85" fill="#888" font-size="13" font-family="sans-serif">Selalu pasang pelindung sebelum cuci</text>
+  </g>
+
+  <!-- Mistake 4 -->
+  <g transform="translate(520, 210)">
+    <rect x="0" y="0" width="450" height="120" rx="12" fill="white" stroke="#ef5350" stroke-width="2"/>
+    <rect x="0" y="0" width="10" height="120" rx="5" fill="#ef5350"/>
+    <text x="35" y="40" fill="#c62828" font-size="30">✕</text>
+    <text x="75" y="35" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Menyalakan AC saat basah</text>
+    <text x="75" y="62" fill="#888" font-size="13" font-family="sans-serif">Korsleting &amp; kerusakan komponen</text>
+    <text x="75" y="85" fill="#888" font-size="13" font-family="sans-serif">Pastikan benar-benar kering</text>
+  </g>
+
+  <!-- Mistake 5 -->
+  <g transform="translate(30, 350)">
+    <rect x="0" y="0" width="450" height="120" rx="12" fill="white" stroke="#ef5350" stroke-width="2"/>
+    <rect x="0" y="0" width="10" height="120" rx="5" fill="#ef5350"/>
+    <text x="35" y="40" fill="#c62828" font-size="30">✕</text>
+    <text x="75" y="35" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Menggunakan bahan kimia keras</text>
+    <text x="75" y="62" fill="#888" font-size="13" font-family="sans-serif">Merusak material plastik &amp; logam</text>
+    <text x="75" y="85" fill="#888" font-size="13" font-family="sans-serif">Gunakan cairan khusus AC</text>
+  </g>
+
+  <!-- Mistake 6 -->
+  <g transform="translate(520, 350)">
+    <rect x="0" y="0" width="450" height="120" rx="12" fill="white" stroke="#ef5350" stroke-width="2"/>
+    <rect x="0" y="0" width="10" height="120" rx="5" fill="#ef5350"/>
+    <text x="35" y="40" fill="#c62828" font-size="30">✕</text>
+    <text x="75" y="35" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Tidak mengecek setelah selesai</text>
+    <text x="75" y="62" fill="#888" font-size="13" font-family="sans-serif">Tetesan air belum tertangani</text>
+    <text x="75" y="85" fill="#888" font-size="13" font-family="sans-serif">Selalu test run &amp; cek kebocoran</text>
+  </g>
+
+  <!-- Bottom tip -->
+  <g transform="translate(30, 500)">
+    <rect x="0" y="0" width="940" height="70" rx="10" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+    <text x="30" y="44" fill="#2e7d32" font-size="24">✓</text>
+    <text x="65" y="28" fill="#2e7d32" font-size="17" font-weight="bold" font-family="sans-serif">TIPS: Ikuti prosedur step-by-step. Keselamatan adalah prioritas utama.</text>
+    <text x="65" y="52" fill="#388e3c" font-size="14" font-family="sans-serif">Ketika ragu, tanyakan kepada supervisor atau teknisi senior.</text>
+  </g>
+</svg>

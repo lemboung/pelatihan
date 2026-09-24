@@ -1,0 +1,111 @@
+---
+interface Props {
+  before: { title: string; description: string; image?: string };
+  after: { title: string; description: string; image?: string };
+}
+
+const { before, after } = Astro.props;
+---
+
+<div class="comparison">
+  <div class="comparison__side comparison__side--before">
+    <span class="comparison__badge comparison__badge--before">Sebelum</span>
+    {before.image && <img src={before.image} alt={before.title} />}
+    <h4>{before.title}</h4>
+    <p>{before.description}</p>
+  </div>
+  <div class="comparison__divider">
+    <span>VS</span>
+  </div>
+  <div class="comparison__side comparison__side--after">
+    <span class="comparison__badge comparison__badge--after">Sesudah</span>
+    {after.image && <img src={after.image} alt={after.title} />}
+    <h4>{after.title}</h4>
+    <p>{after.description}</p>
+  </div>
+</div>
+
+<style>
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1.5rem;
+    align-items: stretch;
+    flex: 1;
+  }
+  .comparison__side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: var(--color-surface);
+  }
+  .comparison__side--before {
+    border: 2px solid #ffcdd2;
+  }
+  .comparison__side--after {
+    border: 2px solid #c8e6c9;
+  }
+  .comparison__side img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .comparison__side h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .comparison__side p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.4;
+  }
+  .comparison__badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+  .comparison__badge--before {
+    background: #ffcdd2;
+    color: #b71c1c;
+  }
+  .comparison__badge--after {
+    background: #c8e6c9;
+    color: #1b5e20;
+  }
+  .comparison__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .comparison__divider span {
+    background: var(--color-text);
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    .comparison {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .comparison__divider {
+      justify-content: flex-start;
+    }
+  }
+</style>

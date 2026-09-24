@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <rect width="1000" height="500" fill="#f8f9fa"/>
+
+  <text x="500" y="42" text-anchor="middle" fill="#1a1a2e" font-size="28" font-weight="bold" font-family="sans-serif">Tools &amp; Equipment</text>
+
+  <!-- Tools grid -->
+  <!-- 1. Jet Cleaner -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="40" y="35" width="130" height="65" rx="10" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2"/>
+    <rect x="65" y="100" width="15" height="35" fill="#42a5f5"/>
+    <rect x="130" y="100" width="15" height="35" fill="#42a5f5"/>
+    <circle cx="105" cy="68" r="18" fill="#bbdefb" stroke="#42a5f5" stroke-width="1.5"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="16" font-weight="bold" font-family="sans-serif">Jet Cleaner</text>
+  </g>
+
+  <!-- 2. Spray Bottle -->
+  <g transform="translate(265, 70)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="65" y="30" width="80" height="90" rx="6" fill="#c8e6c9" stroke="#66bb6a" stroke-width="2"/>
+    <rect x="78" y="15" width="54" height="20" rx="4" fill="#66bb6a"/>
+    <rect x="92" y="8" width="26" height="10" fill="#43a047"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="16" font-weight="bold" font-family="sans-serif">Spray Bottle</text>
+  </g>
+
+  <!-- 3. Brush -->
+  <g transform="translate(500, 70)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="85" y="22" width="30" height="80" rx="4" fill="#8d6e63" stroke="#5d4037" stroke-width="1.5"/>
+    <rect x="72" y="97" width="56" height="35" rx="4" fill="#a1887f" stroke="#8d6e63" stroke-width="1.5"/>
+    <line x1="80" y1="107" x2="80" y2="125" stroke="#5d4037" stroke-width="1.5"/>
+    <line x1="90" y1="107" x2="90" y2="125" stroke="#5d4037" stroke-width="1.5"/>
+    <line x1="100" y1="107" x2="100" y2="125" stroke="#5d4037" stroke-width="1.5"/>
+    <line x1="110" y1="107" x2="110" y2="125" stroke="#5d4037" stroke-width="1.5"/>
+    <line x1="120" y1="107" x2="120" y2="125" stroke="#5d4037" stroke-width="1.5"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="16" font-weight="bold" font-family="sans-serif">Brush</text>
+  </g>
+
+  <!-- 4. Bucket -->
+  <g transform="translate(735, 70)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <path d="M 45 40 L 52 120 L 158 120 L 165 40 Z" fill="#e0e0e0" stroke="#999" stroke-width="2"/>
+    <rect x="45" y="40" width="120" height="14" rx="3" fill="#bdbdbd"/>
+    <ellipse cx="105" cy="85" rx="42" ry="20" fill="#bbdefb" opacity="0.5"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="16" font-weight="bold" font-family="sans-serif">Bucket</text>
+  </g>
+
+  <!-- 5. Cloth -->
+  <g transform="translate(30, 290)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="35" y="35" width="140" height="80" rx="6" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
+    <path d="M 35 60 Q 65 52 95 60 Q 125 68 155 60 L 155 88 Q 125 96 95 88 Q 65 80 35 88 Z" fill="#fff176" opacity="0.5"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="16" font-weight="bold" font-family="sans-serif">Clean Cloth</text>
+  </g>
+
+  <!-- 6. Screwdriver -->
+  <g transform="translate(265, 290)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="92" y="25" width="16" height="55" fill="#90a4ae"/>
+    <rect x="85" y="75" width="30" height="40" rx="4" fill="#ff7043" stroke="#e64a19" stroke-width="1.5"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="16" font-weight="bold" font-family="sans-serif">Screwdriver</text>
+  </g>
+
+  <!-- 7. Cleaning Solution -->
+  <g transform="translate(500, 290)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="65" y="22" width="80" height="95" rx="6" fill="#b3e5fc" stroke="#0288d1" stroke-width="2"/>
+    <rect x="78" y="8" width="54" height="20" rx="4" fill="#0288d1"/>
+    <text x="105" y="70" text-anchor="middle" fill="#01579b" font-size="12" font-weight="bold" font-family="sans-serif">CLEAN</text>
+    <text x="105" y="85" text-anchor="middle" fill="#01579b" font-size="12" font-weight="bold" font-family="sans-serif">SOL.</text>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="15" font-weight="bold" font-family="sans-serif">Cleaning Solution</text>
+  </g>
+
+  <!-- 8. Vacuum -->
+  <g transform="translate(735, 290)">
+    <rect x="0" y="0" width="210" height="190" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="72" y="30" width="56" height="72" rx="10" fill="#e0e0e0" stroke="#999" stroke-width="2"/>
+    <rect x="85" y="102" width="30" height="20" fill="#999"/>
+    <path d="M 100 122 L 100 140" stroke="#666" stroke-width="4"/>
+    <rect x="78" y="138" width="44" height="10" rx="4" fill="#666"/>
+    <text x="105" y="165" text-anchor="middle" fill="#333" font-size="15" font-weight="bold" font-family="sans-serif">Vacuum Cleaner</text>
+  </g>
+</svg>

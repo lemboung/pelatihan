@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <rect width="1000" height="500" fill="#f8f9fa"/>
+
+  <text x="500" y="42" text-anchor="middle" fill="#1a1a2e" font-size="28" font-weight="bold" font-family="sans-serif">AC Washing Bag Setup</text>
+
+  <!-- Wall -->
+  <rect x="250" y="60" width="500" height="350" fill="#e8e0d4"/>
+
+  <!-- Indoor unit on wall -->
+  <g transform="translate(320, 90)">
+    <rect x="0" y="0" width="360" height="90" rx="10" fill="#f0f0f0" stroke="#ccc" stroke-width="2"/>
+    <rect x="25" y="58" width="310" height="16" rx="4" fill="#e0e0e0"/>
+    <text x="180" y="38" text-anchor="middle" fill="#666" font-size="16" font-weight="bold" font-family="sans-serif">INDOOR UNIT</text>
+  </g>
+
+  <!-- Washing bag (funnel shape) -->
+  <g transform="translate(280, 180)">
+    <path d="M 40 0 L 440 0 L 500 250 L 0 250 Z" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2" opacity="0.8"/>
+    <rect x="40" y="-8" width="400" height="20" rx="4" fill="#42a5f5" stroke="#1e88e5" stroke-width="1"/>
+    <rect x="0" y="230" width="500" height="30" rx="6" fill="#bbdefb" stroke="#42a5f5" stroke-width="1"/>
+
+    <!-- Water droplets inside bag -->
+    <circle cx="120" cy="60" r="6" fill="#81d4fa"/>
+    <circle cx="250" cy="80" r="7" fill="#81d4fa"/>
+    <circle cx="350" cy="50" r="5" fill="#81d4fa"/>
+    <circle cx="170" cy="110" r="6" fill="#81d4fa"/>
+    <circle cx="300" cy="120" r="5" fill="#81d4fa"/>
+    <circle cx="200" cy="160" r="7" fill="#81d4fa"/>
+    <circle cx="380" cy="100" r="6" fill="#81d4fa"/>
+
+    <!-- Labels -->
+    <text x="250" y="38" text-anchor="middle" fill="#1565c0" font-size="16" font-weight="bold" font-family="sans-serif">Plastic Bag / Terpal</text>
+    <text x="250" y="200" text-anchor="middle" fill="#1565c0" font-size="14" font-family="sans-serif">Water flows down ↓</text>
+  </g>
+
+  <!-- Drain bucket -->
+  <g transform="translate(420, 440)">
+    <rect x="0" y="0" width="160" height="45" rx="6" fill="#e0e0e0" stroke="#999" stroke-width="2"/>
+    <rect x="6" y="20" width="148" height="19" rx="4" fill="#bbdefb"/>
+    <text x="80" y="15" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Bucket / Ember</text>
+  </g>
+
+  <!-- Annotations -->
+  <g transform="translate(800, 90)">
+    <rect x="0" y="0" width="180" height="300" rx="10" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <text x="90" y="30" text-anchor="middle" fill="#333" font-size="18" font-weight="bold" font-family="sans-serif">Washing Bag</text>
+    <text x="15" y="60" fill="#555" font-size="14" font-family="sans-serif">• Menampung air cucian</text>
+    <text x="15" y="90" fill="#555" font-size="14" font-family="sans-serif">• Mencegah air ke dinding</text>
+    <text x="15" y="120" fill="#555" font-size="14" font-family="sans-serif">• Mudah dipasang &amp; dilepas</text>
+    <text x="15" y="160" fill="#555" font-size="14" font-weight="bold" font-family="sans-serif">Bahan:</text>
+    <text x="15" y="190" fill="#555" font-size="14" font-family="sans-serif">• Plastik tebal / terpal</text>
+    <text x="15" y="220" fill="#555" font-size="14" font-family="sans-serif">• Tali untuk mengikat</text>
+    <text x="15" y="250" fill="#555" font-size="14" font-family="sans-serif">• Corong di bagian bawah</text>
+  </g>
+</svg>

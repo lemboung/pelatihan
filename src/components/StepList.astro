@@ -1,0 +1,70 @@
+---
+interface Props {
+  steps: { number: string; text: string; detail?: string }[];
+  numbered?: boolean;
+}
+
+const { steps, numbered = true } = Astro.props;
+---
+
+<ol class="step-list" class:list={[{ 'step-list--numbered': numbered }]}>
+  {steps.map((step) => (
+    <li class="step-list__item">
+      {numbered && <span class="step-list__number">{step.number}</span>}
+      <div class="step-list__text">
+        <strong>{step.text}</strong>
+        {step.detail && <p class="step-list__detail">{step.detail}</p>}
+      </div>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .step-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .step-list__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: var(--color-surface);
+    border-left: 4px solid var(--color-primary);
+  }
+  .step-list__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2rem;
+    height: 2rem;
+    background: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .step-list__text strong {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+  .step-list__detail {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin: 0.25rem 0 0;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 768px) {
+    .step-list__item {
+      padding: 0.5rem 0.75rem;
+    }
+  }
+</style>

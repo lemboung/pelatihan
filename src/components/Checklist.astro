@@ -1,0 +1,82 @@
+---
+interface Props {
+  items: { text: string; checked?: boolean }[];
+  title?: string;
+}
+
+const { items, title } = Astro.props;
+---
+
+<div class="checklist">
+  {title && <h3 class="checklist__title">{title}</h3>}
+  <ul class="checklist__list">
+    {items.map((item) => (
+      <li class="checklist__item" class:list={[{ 'checklist__item--done': item.checked }]}>
+        <span class="checklist__icon">{item.checked ? '✓' : '○'}</span>
+        <span class="checklist__text">{item.text}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  .checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .checklist__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text, #1a1a2e);
+  }
+  .slide--dark .checklist__title {
+    color: #fff;
+  }
+  .checklist__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .checklist__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.85rem;
+    border-radius: 6px;
+    background: var(--color-surface, #f0f2f5);
+    font-size: 0.95rem;
+  }
+  .slide--dark .checklist__item {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .checklist__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary, #1565c0);
+    font-size: 0.7rem;
+    color: var(--color-primary, #1565c0);
+    flex-shrink: 0;
+  }
+  .checklist__text {
+    color: var(--color-text, #1a1a2e);
+  }
+  .slide--dark .checklist__text {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .checklist__item--done .checklist__icon {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  .checklist__item--done .checklist__text {
+    opacity: 0.9;
+  }
+</style>

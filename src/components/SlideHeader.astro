@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  badge?: string;
+  align?: 'left' | 'center';
+}
+
+const { title, subtitle, badge, align = 'left' } = Astro.props;
+---
+
+<header class={`slide-header slide-header--${align}`}>
+  {badge && <span class="slide-header__badge">{badge}</span>}
+  <h1 class="slide-header__title">{title}</h1>
+  {subtitle && <p class="slide-header__subtitle">{subtitle}</p>}
+</header>
+
+<style>
+  .slide-header {
+    margin-bottom: 2rem;
+  }
+  .slide-header--center {
+    text-align: center;
+  }
+  .slide-header__badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+  .slide-header__title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0;
+    color: var(--color-text);
+  }
+  .slide--dark .slide-header__title {
+    color: #fff;
+  }
+  .slide--accent .slide-header__title {
+    color: #fff;
+  }
+  .slide-header__subtitle {
+    font-size: 1.15rem;
+    color: var(--color-text-muted);
+    margin: 0.5rem 0 0;
+    line-height: 1.5;
+  }
+  .slide--dark .slide-header__subtitle {
+    color: rgba(255,255,255,0.7);
+  }
+
+  @media (max-width: 768px) {
+    .slide-header__title {
+      font-size: 1.75rem;
+    }
+  }
+</style>

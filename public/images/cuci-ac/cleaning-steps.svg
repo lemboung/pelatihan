@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+  <defs>
+    <marker id="arrowG" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#bbb"/>
+    </marker>
+    <marker id="arrowO" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#ff9800"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="620" fill="#f8f9fa"/>
+
+  <text x="500" y="42" text-anchor="middle" fill="#1a1a2e" font-size="28" font-weight="bold" font-family="sans-serif">Cleaning Process: Indoor Unit</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(30, 70)">
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="0" y="0" width="280" height="42" rx="12" fill="#1565c0"/>
+    <rect x="0" y="30" width="280" height="12" fill="#1565c0"/>
+    <text x="140" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">STEP 1: Power Off</text>
+
+    <!-- Power icon -->
+    <circle cx="140" cy="95" r="32" fill="#e3f2fd" stroke="#42a5f5" stroke-width="2"/>
+    <line x1="140" y1="68" x2="140" y2="88" stroke="#1565c0" stroke-width="4"/>
+    <path d="M 120 103 Q 120 122 140 122 Q 160 122 160 103" fill="none" stroke="#1565c0" stroke-width="4"/>
+
+    <text x="140" y="150" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Matikan AC &amp; cabut steker</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 320 150 L 355 150" stroke="#bbb" stroke-width="3" fill="none" marker-end="url(#arrowG)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(365, 70)">
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="0" y="0" width="280" height="42" rx="12" fill="#43a047"/>
+    <rect x="0" y="30" width="280" height="12" fill="#43a047"/>
+    <text x="140" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">STEP 2: Open Cover</text>
+
+    <rect x="50" y="60" width="180" height="55" rx="6" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1"/>
+    <path d="M 50 60 Q 140 38 230 60" fill="#c8e6c9" stroke="#66bb6a" stroke-width="1"/>
+
+    <text x="140" y="150" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Buka cover depan unit</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 655 150 L 690 150" stroke="#bbb" stroke-width="3" fill="none" marker-end="url(#arrowG)"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(700, 70)">
+    <rect x="0" y="0" width="270" height="160" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="0" y="0" width="270" height="42" rx="12" fill="#ff9800"/>
+    <rect x="0" y="30" width="270" height="12" fill="#ff9800"/>
+    <text x="135" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">STEP 3: Remove Filter</text>
+
+    <!-- Filter being pulled out -->
+    <rect x="30" y="60" width="80" height="55" rx="4" fill="#e0e0e0" stroke="#999" stroke-width="1"/>
+    <line x1="38" y1="72" x2="102" y2="72" stroke="#bbb" stroke-width="1.5"/>
+    <line x1="38" y1="84" x2="102" y2="84" stroke="#bbb" stroke-width="1.5"/>
+    <line x1="38" y1="96" x2="102" y2="96" stroke="#bbb" stroke-width="1.5"/>
+    <line x1="38" y1="108" x2="102" y2="108" stroke="#bbb" stroke-width="1.5"/>
+    <path d="M 120 88 L 160 88" stroke="#ff9800" stroke-width="3" marker-end="url(#arrowO)"/>
+
+    <text x="135" y="150" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Lepas filter dengan hati-hati</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(30, 290)">
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="0" y="0" width="280" height="42" rx="12" fill="#8e24aa"/>
+    <rect x="0" y="30" width="280" height="12" fill="#8e24aa"/>
+    <text x="140" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">STEP 4: Install Bag</text>
+
+    <rect x="50" y="60" width="180" height="45" rx="6" fill="#f0f0f0" stroke="#ccc" stroke-width="1"/>
+    <path d="M 35 105 L 245 105 L 275 145 L 5 145 Z" fill="#e3f2fd" stroke="#42a5f5" stroke-width="1" opacity="0.7"/>
+
+    <text x="140" y="150" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Pasang washing bag</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 320 370 L 355 370" stroke="#bbb" stroke-width="3" fill="none" marker-end="url(#arrowG)"/>
+
+  <!-- Step 5 -->
+  <g transform="translate(365, 290)">
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="0" y="0" width="280" height="42" rx="12" fill="#00838f"/>
+    <rect x="0" y="30" width="280" height="12" fill="#00838f"/>
+    <text x="140" y="30" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">STEP 5: Spray &amp; Clean</text>
+
+    <!-- Spray illustration -->
+    <rect x="40" y="65" width="40" height="40" rx="4" fill="#4dd0e1"/>
+    <path d="M 80 78 L 220 65 L 220 100 L 80 88 Z" fill="#b2ebf2" opacity="0.5"/>
+    <circle cx="150" cy="78" r="3" fill="#4dd0e1"/>
+    <circle cx="185" cy="72" r="3" fill="#4dd0e1"/>
+    <circle cx="170" cy="85" r="3" fill="#4dd0e1"/>
+
+    <text x="140" y="150" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Semprot evaporator &amp; blower</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M 655 370 L 690 370" stroke="#bbb" stroke-width="3" fill="none" marker-end="url(#arrowG)"/>
+
+  <!-- Step 6 -->
+  <g transform="translate(700, 290)">
+    <rect x="0" y="0" width="270" height="160" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="0" y="0" width="270" height="42" rx="12" fill="#c62828"/>
+    <rect x="0" y="30" width="270" height="12" fill="#c62828"/>
+    <text x="135" y="30" text-anchor="middle" fill="white" font-size="17" font-weight="bold" font-family="sans-serif">STEP 6: Dry &amp; Reassemble</text>
+
+    <!-- Sun/drying icon -->
+    <circle cx="135" cy="90" r="25" fill="#fff176" stroke="#f9a825" stroke-width="2"/>
+    <line x1="135" y1="58" x2="135" y2="50" stroke="#f9a825" stroke-width="3"/>
+    <line x1="135" y1="122" x2="135" y2="130" stroke="#f9a825" stroke-width="3"/>
+    <line x1="103" y1="90" x2="95" y2="90" stroke="#f9a825" stroke-width="3"/>
+    <line x1="167" y1="90" x2="175" y2="90" stroke="#f9a825" stroke-width="3"/>
+
+    <text x="135" y="150" text-anchor="middle" fill="#666" font-size="13" font-family="sans-serif">Keringkan &amp; pasang kembali</text>
+  </g>
+
+  <!-- Summary bar -->
+  <rect x="30" y="480" width="940" height="80" rx="10" fill="#1a1a2e"/>
+  <text x="500" y="512" text-anchor="middle" fill="white" font-size="20" font-weight="bold" font-family="sans-serif">Total waktu: 30-45 menit per unit</text>
+  <text x="500" y="540" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="15" font-family="sans-serif">Pastikan semua komponen kering sebelum menyalakan AC</text>
+</svg>

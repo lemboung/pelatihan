@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+  <rect width="1000" height="620" fill="#f8f9fa"/>
+
+  <text x="500" y="42" text-anchor="middle" fill="#1a1a2e" font-size="28" font-weight="bold" font-family="sans-serif">PPE &amp; Safety Equipment</text>
+
+  <!-- Safety items grid -->
+  <!-- 1. Safety Glasses -->
+  <g transform="translate(40, 70)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2"/>
+    <ellipse cx="82" cy="80" rx="22" ry="15" fill="none" stroke="#1565c0" stroke-width="3"/>
+    <ellipse cx="118" cy="80" rx="22" ry="15" fill="none" stroke="#1565c0" stroke-width="3"/>
+    <line x1="104" y1="80" x2="96" y2="80" stroke="#1565c0" stroke-width="3"/>
+    <line x1="60" y1="80" x2="45" y2="74" stroke="#1565c0" stroke-width="3"/>
+    <line x1="140" y1="80" x2="155" y2="74" stroke="#1565c0" stroke-width="3"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Safety Glasses</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Kacamata Safety</text>
+    <text x="100" y="218" text-anchor="middle" fill="#1565c0" font-size="13" font-weight="bold" font-family="sans-serif">WAJIB</text>
+  </g>
+
+  <!-- 2. Gloves -->
+  <g transform="translate(270, 70)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#e8f5e9" stroke="#43a047" stroke-width="2"/>
+    <path d="M 75 110 L 75 60 Q 75 48 87 48 L 93 48 L 93 60 L 100 60 L 100 48 L 107 48 L 107 60 L 114 60 L 114 48 L 120 48 L 120 65 Q 128 65 128 78 L 128 110 Z" fill="#66bb6a" stroke="#43a047" stroke-width="1.5"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Gloves</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Sarung Tangan</text>
+    <text x="100" y="218" text-anchor="middle" fill="#43a047" font-size="13" font-weight="bold" font-family="sans-serif">WAJIB</text>
+  </g>
+
+  <!-- 3. Apron -->
+  <g transform="translate(500, 70)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <path d="M 75 55 L 75 115 Q 75 122 82 122 L 118 122 Q 125 122 125 115 L 125 55 Z" fill="#ffb74d" stroke="#ff9800" stroke-width="1.5"/>
+    <path d="M 75 55 Q 100 43 125 55" fill="none" stroke="#ff9800" stroke-width="2.5"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Apron</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Celemek</text>
+    <text x="100" y="218" text-anchor="middle" fill="#ff9800" font-size="12" font-weight="bold" font-family="sans-serif">DISARANKAN</text>
+  </g>
+
+  <!-- 4. Rubber Boots -->
+  <g transform="translate(730, 70)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#fce4ec" stroke="#e53935" stroke-width="2"/>
+    <path d="M 82 110 L 82 60 Q 82 50 92 50 L 108 50 Q 118 50 118 60 L 118 110 L 130 118 L 130 125 L 70 125 L 70 118 Z" fill="#ef9a9a" stroke="#e53935" stroke-width="1.5"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Rubber Boots</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Sepatu Boot</text>
+    <text x="100" y="218" text-anchor="middle" fill="#e53935" font-size="12" font-weight="bold" font-family="sans-serif">DISARANKAN</text>
+  </g>
+
+  <!-- 5. Mask -->
+  <g transform="translate(140, 340)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#f3e5f5" stroke="#8e24aa" stroke-width="2"/>
+    <path d="M 68 72 Q 68 55 100 55 Q 132 55 132 72 L 132 98 Q 132 115 100 115 Q 68 115 68 98 Z" fill="#ce93d8" stroke="#8e24aa" stroke-width="1.5"/>
+    <line x1="68" y1="78" x2="132" y2="78" stroke="#8e24aa" stroke-width="1.5"/>
+    <line x1="68" y1="92" x2="132" y2="92" stroke="#8e24aa" stroke-width="1.5"/>
+    <line x1="55" y1="72" x2="68" y2="72" stroke="#8e24aa" stroke-width="2.5"/>
+    <line x1="132" y1="72" x2="145" y2="72" stroke="#8e24aa" stroke-width="2.5"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Mask</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Masker</text>
+    <text x="100" y="218" text-anchor="middle" fill="#8e24aa" font-size="12" font-weight="bold" font-family="sans-serif">DISARANKAN</text>
+  </g>
+
+  <!-- 6. Hard Hat -->
+  <g transform="translate(380, 340)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#e0f7fa" stroke="#00838f" stroke-width="2"/>
+    <path d="M 62 100 Q 62 48 100 48 Q 138 48 138 100 Z" fill="#4dd0e1" stroke="#00838f" stroke-width="1.5"/>
+    <rect x="55" y="97" width="90" height="10" rx="4" fill="#00acc1"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Hard Hat</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Helm Safety</text>
+    <text x="100" y="218" text-anchor="middle" fill="#00838f" font-size="11" font-weight="bold" font-family="sans-serif">JIKA DIPERLUKAN</text>
+  </g>
+
+  <!-- 7. Multimeter -->
+  <g transform="translate(620, 340)">
+    <rect x="0" y="0" width="200" height="240" rx="12" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+    <circle cx="100" cy="85" r="50" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+    <rect x="72" y="55" width="56" height="65" rx="4" fill="#fff176" stroke="#f9a825" stroke-width="1.5"/>
+    <rect x="78" y="62" width="44" height="20" rx="3" fill="#f9a825"/>
+    <circle cx="100" cy="102" r="8" fill="none" stroke="#f9a825" stroke-width="2.5"/>
+    <text x="100" y="165" text-anchor="middle" fill="#333" font-size="17" font-weight="bold" font-family="sans-serif">Multimeter</text>
+    <text x="100" y="190" text-anchor="middle" fill="#888" font-size="14" font-family="sans-serif">Avometer</text>
+    <text x="100" y="218" text-anchor="middle" fill="#f9a825" font-size="12" font-weight="bold" font-family="sans-serif">UNTUK LISTRIK</text>
+  </g>
+</svg>

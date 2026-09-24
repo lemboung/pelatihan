@@ -1,0 +1,567 @@
+---
+import TrainingLayout from '../layouts/TrainingLayout.astro';
+import Slide from '../components/Slide.astro';
+import SlideHeader from '../components/SlideHeader.astro';
+import ImageText from '../components/ImageText.astro';
+import StepList from '../components/StepList.astro';
+import Checklist from '../components/Checklist.astro';
+import WarningBox from '../components/WarningBox.astro';
+import Comparison from '../components/Comparison.astro';
+import IconGrid from '../components/IconGrid.astro';
+import Card from '../components/Card.astro';
+import Tag from '../components/Tag.astro';
+import Progress from '../components/Progress.astro';
+
+const totalSlides = 23;
+---
+
+<TrainingLayout title="Pelatihan Praktik Cuci AC Split">
+
+  <!-- SLIDE 1: Cover -->
+  <Slide id="cover" bg="dark">
+    <div style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.5rem;">
+      <Tag label="AC TRAINING" icon="🔧" size="lg" color="primary" />
+      <h1 style="font-size: 3rem; font-weight: 900; color: #fff; line-height: 1.1; max-width: 800px;">
+        Pelatihan Praktik<br/>Cuci AC Split
+      </h1>
+      <p style="font-size: 1.2rem; color: rgba(255,255,255,0.7); max-width: 600px; line-height: 1.6;">
+        Panduan praktis untuk teknisi pemula dalam membersihkan AC split secara aman dan efektif
+      </p>
+      <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+        <Tag label="Teknisi Pemula" size="sm" color="secondary" />
+        <Tag label="2-3 Jam" size="sm" color="secondary" />
+        <Tag label="Praktik Langsung" size="sm" color="secondary" />
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 2: Learning Objectives -->
+  <Slide id="objectives">
+    <SlideHeader title="Tujuan Pembelajaran" subtitle="Setelah mengikuti pelatihan ini, peserta akan mampu:" badge="OBJEKTIF" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; flex: 1;">
+      <Card title="Pengetahuan">
+        <Checklist items={[
+          { text: 'Memahami komponen utama AC split', checked: true },
+          { text: 'Menjelaskan mengapa AC perlu dibersihkan', checked: true },
+          { text: 'Mengenal alat dan bahan yang diperlukan', checked: true },
+          { text: 'Memahami prosedur keselamatan kerja', checked: true },
+        ]} />
+      </Card>
+      <Card title="Keterampilan">
+        <Checklist items={[
+          { text: 'Membersihkan filter indoor unit', checked: true },
+          { text: 'Membersihkan evaporator & blower', checked: true },
+          { text: 'Membersihkan unit outdoor', checked: true },
+          { text: 'Melakukan testing setelah pembersihan', checked: true },
+        ]} />
+      </Card>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 3: What Will We Do Today -->
+  <Slide id="agenda" bg="light">
+    <SlideHeader title="Yang Akan Kita Pelajari Hari Ini" subtitle="Overview materi pelatihan" />
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; flex: 1;">
+      <Card title="Sesi 1: Teori">
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+          Cara kerja AC split, komponen utama, dan mengapa AC perlu dibersihkan secara berkala.
+        </p>
+      </Card>
+      <Card title="Sesi 2: Persiapan">
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+          Alat & bahan, K3, pemeriksaan awal, dan pemasangan perlindungan unit.
+        </p>
+      </Card>
+      <Card title="Sesi 3: Praktik">
+        <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+          Pembersihan indoor unit, outdoor unit, testing, dan pengecekan akhir.
+        </p>
+      </Card>
+    </div>
+    <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem;">
+      <div style="text-align: center;">
+        <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary);">45</div>
+        <div style="font-size: 0.8rem; color: var(--color-text-muted);">Menit Teori</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary);">30</div>
+        <div style="font-size: 0.8rem; color: var(--color-text-muted);">Menit Persiapan</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 2rem; font-weight: 800; color: var(--color-primary);">75</div>
+        <div style="font-size: 0.8rem; color: var(--color-text-muted);">Menit Praktik</div>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 4: How a Split AC Works -->
+  <Slide id="how-ac-works">
+    <SlideHeader title="Cara Kerja AC Split" subtitle="Siklus pendinginan sederhana" />
+    <div class="slide-image-full" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="/images/cuci-ac/how-ac-works.svg" alt="Diagram cara kerja AC split" style="max-height: 500px; width: auto;" />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 5: Main Components -->
+  <Slide id="components">
+    <SlideHeader title="Komponen Utama AC Split" subtitle="Bagian-bagian yang perlu diketahui" />
+    <div class="slide-image-full" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="/images/cuci-ac/components-diagram.svg" alt="Diagram komponen AC split" style="max-height: 500px; width: auto;" />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 6: Why AC Needs Cleaning -->
+  <Slide id="why-clean" bg="light">
+    <SlideHeader title="Mengapa AC Perlu Dibersihkan?" subtitle="Dampak jika tidak dirawat" />
+    <ImageText image="/images/cuci-ac/before-after-evaporator.svg" alt="Perbandingan evaporator kotor dan bersih" position="right">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="font-size: 1.3rem; margin: 0;">Evaporator yang kotor</h3>
+        <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-muted);">
+          Debu dan kotoran menumpuk pada sirip evaporator, menghambat sirkulasi udara dan menurunkan efisiensi pendinginan hingga 30%.
+        </p>
+        <WarningBox type="warning" title="Dampak jangka panjang">
+          <p style="font-size: 0.85rem;">Konsumsi energi meningkat, umur unit berkurang, dan kualitas udara dalam ruangan menurun.</p>
+        </WarningBox>
+      </div>
+    </ImageText>
+  </Slide>
+
+  <!-- SLIDE 7: Symptoms of Dirty AC -->
+  <Slide id="symptoms">
+    <SlideHeader title="Gejala AC Kotor" subtitle="Tanda-tanda AC perlu dibersihkan" />
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; flex: 1;">
+      <div class="symptom-card">
+        <span class="symptom-icon">🌡️</span>
+        <div>
+          <strong>Suhu tidak stabil</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">AC tidak mampu mencapai suhu yang diatur</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <span class="symptom-icon">💨</span>
+        <div>
+          <strong>Angin lemah</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">Sirkulasi udara dari unit berkurang drastis</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <span class="symptom-icon">👃</span>
+        <div>
+          <strong>Bau tidak sedap</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">Jamur dan bakteri pada evaporator</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <span class="symptom-icon">💧</span>
+        <div>
+          <strong>Kelembapan berlebih</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">Drainase tersumbat menyebabkan kebocoran</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <span class="symptom-icon">⚡</span>
+        <div>
+          <strong>Listrik naik</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">Tagihan listrik meningkat tanpa sebab</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <span class="symptom-icon">🔊</span>
+        <div>
+          <strong>Noise berlebih</strong>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">Suara tidak normal dari unit indoor/outdoor</p>
+        </div>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 8: Tools & Equipment -->
+  <Slide id="tools" bg="light">
+    <SlideHeader title="Alat & Peralatan" subtitle="Yang perlu disiapkan sebelum mulai" />
+    <div class="slide-image-full" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="/images/cuci-ac/tools-equipment.svg" alt="Peralatan untuk cuci AC" style="max-height: 420px; width: auto;" />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 9: PPE & Safety -->
+  <Slide id="ppe">
+    <SlideHeader title="APD & Keselamatan Kerja" subtitle="Alat Pelindung Diri yang wajib digunakan" />
+    <div class="slide-image-full" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="/images/cuci-ac/ppe-equipment.svg" alt="Peralatan APD untuk teknisi AC" style="max-height: 450px; width: auto;" />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 10: Electrical Safety -->
+  <Slide id="electrical-safety" bg="dark">
+    <SlideHeader title="Keselamatan Kelistrikan" subtitle="Langkah kritis yang TIDAK BOLEH dilewatkan" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; align-items: center;">
+      <div>
+        <ImageText image="/images/cuci-ac/electrical.jpg" alt="Keselamatan kelistrikan AC" position="right">
+          <WarningBox type="danger" title="BAHAYA: Listrik">
+            <p style="font-size: 0.9rem;">Sengatan listrik dapat menyebabkan cedera serius atau kematian. Selalu matikan dan cabut steker sebelum bekerja.</p>
+          </WarningBox>
+        </ImageText>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <StepList steps={[
+          { number: '1', text: 'Matikan AC dari remote', detail: 'Pastikan unit benar-benar mati' },
+          { number: '2', text: 'Cabut steker dari stopkontak', detail: 'Putuskan hubungan dengan listrik' },
+          { number: '3', text: 'Gunakan avometer', detail: 'Pastikan tidak ada arus mengalir' },
+          { number: '4', text: 'Jaga area tetap kering', detail: 'Hindari genangan air dekat komponen listrik' },
+        ]} />
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 11: Before Starting Checklist -->
+  <Slide id="pre-check" bg="light">
+    <SlideHeader title="Sebelum Memulai" subtitle="Pemeriksaan awal yang harus dilakukan" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1;">
+      <Checklist title="Pemeriksaan Unit" items={[
+        { text: 'AC dalam kondisi mati', checked: true },
+        { text: 'Steker tercabut dari stopkontak', checked: true },
+        { text: 'Tidak ada kerusakan fisik pada unit', checked: true },
+        { text: 'Suhu ruangan stabil (tidak terlalu panas)', checked: true },
+        { text: 'Unit outdoor dapat diakses dengan aman', checked: true },
+      ]} />
+      <Checklist title="Peralatan Siap" items={[
+        { text: 'Jet cleaner / spray gun terisi air', checked: true },
+        { text: 'Cairan pembersih khusus AC', checked: true },
+        { text: 'Washing bag / terpal terpasang', checked: true },
+        { text: 'Ember penampung air', checked: true },
+        { text: 'Kain lap bersih', checked: true },
+      ]} />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 12: Protecting Indoor Unit -->
+  <Slide id="protection">
+    <SlideHeader title="Melindungi Unit Indoor" subtitle="Persiapan sebelum pencucian" />
+    <ImageText image="/images/cuci-ac/washing-bag.svg" alt="Pemasangan washing bag pada unit indoor" position="left">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <h3 style="font-size: 1.2rem;">Pasang Washing Bag</h3>
+        <StepList steps={[
+          { number: '1', text: 'Buka cover depan unit', detail: 'Angkat pelan-pelan ke atas' },
+          { number: '2', text: 'Pasang washing bag', detail: 'Ikat pada bagian bawah unit' },
+          { number: '3', text: 'Arahkan corong ke ember', detail: 'Pastikan air mengalir ke penampung' },
+          { number: '4', text: 'Periksa kebocoran', detail: 'Pastikan tidak ada air yang tumpah' },
+        ]} />
+        <WarningBox type="tip">
+          <p style="font-size: 0.85rem;">Gunakan terpal atau plastik tebal jika washing bag tidak tersedia. Yang penting: lantai dan dinding harus terlindungi.</p>
+        </WarningBox>
+      </div>
+    </ImageText>
+  </Slide>
+
+  <!-- SLIDE 13: Opening Covers & Removing Filters -->
+  <Slide id="open-filters">
+    <SlideHeader title="Membuka Cover & Melepas Filter" subtitle="Langkah pertama pembersihan indoor unit" />
+    <ImageText image="/images/cuci-ac/cleaning-steps.svg" alt="Langkah-langkah membuka cover dan melepas filter" position="right">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <StepList steps={[
+          { number: '1', text: 'Angkat cover depan ke atas', detail: 'Biasanya ada clip di sisi kiri & kanan' },
+          { number: '2', text: 'Tahan cover agar tidak jatuh', detail: 'Beberapa unit memiliki penyangga' },
+          { number: '3', text: 'Lepas filter dari dudukannya', detail: 'Geser ke atas lalu tarik keluar' },
+          { number: '4', text: 'Letakkan filter di tempat aman', detail: 'Siapkan ember berisi air sabun' },
+        ]} />
+        <WarningBox type="info">
+          <p style="font-size: 0.85rem;">Catat posisi filter. Beberapa unit memiliki filter kiri & kanan yang berbeda ukuran.</p>
+        </WarningBox>
+      </div>
+    </ImageText>
+  </Slide>
+
+  <!-- SLIDE 14: Cleaning the Filter -->
+  <Slide id="clean-filter" bg="light">
+    <SlideHeader title="Membersihkan Filter" subtitle="Langkah paling dasar dan sering dilakukan" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; align-items: start;">
+      <div>
+        <StepList steps={[
+          { number: '1', text: 'Rendam filter dalam air sabun', detail: 'Gunakan air hangat untuk hasil optimal' },
+          { number: '2', text: ' Sikat perlahan dengan sikat lembut', detail: 'Jangan terlalu keras agar jaring tidak rusak' },
+          { number: '3', text: 'Bilas dengan air bersih', detail: 'Pastikan tidak ada sisa sabun' },
+          { number: '4', text: 'Jemur atau keringkan', detail: 'Jangan pasang filter dalam kondisi basah' },
+        ]} />
+      </div>
+      <div>
+        <Card title="Frekuensi Pembersihan Filter">
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; background: #fce4ec; border-radius: 6px;">
+              <span style="font-size: 0.85rem;">Rumah tangga</span>
+              <Tag label="2 minggu sekali" size="sm" color="danger" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; background: #fff3e0; border-radius: 6px;">
+              <span style="font-size: 0.85rem;">Kantor / komersial</span>
+              <Tag label="1 minggu sekali" size="sm" color="primary" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem; background: #e8f5e9; border-radius: 6px;">
+              <span style="font-size: 0.85rem;">Area berdebu</span>
+              <Tag label="3-5 hari sekali" size="sm" color="success" />
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 15: Cleaning the Evaporator -->
+  <Slide id="clean-evaporator">
+    <SlideHeader title="Membersihkan Evaporator" subtitle="Serpentin pendingin di unit indoor" />
+    <ImageText image="/images/cuci-ac/cleaning-steps.svg" alt="Proses pembersihan evaporator" position="left">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <StepList steps={[
+          { number: '1', text: 'Semprotkan cairan pembersih', detail: 'Gunakan spray bottle, semprot merata ke sirip evaporator' },
+          { number: '2', text: 'Diamkan 5-10 menit', detail: 'Biarkan cairan bekerja melarutkan kotoran' },
+          { number: '3', text: 'Semprot dengan air bersih', detail: 'Gunakan tekanan rendah, arahkan dari atas ke bawah' },
+          { number: '4', text: 'Ulangi jika masih kotor', detail: 'Pastikan semua kotoran terangkat' },
+        ]} />
+        <WarningBox type="warning" title="Penting">
+          <p style="font-size: 0.85rem;">Jangan semprot terlalu dekat atau dengan tekanan tinggi. Sirip evaporator sangat tipis dan mudah bengkok.</p>
+        </WarningBox>
+      </div>
+    </ImageText>
+  </Slide>
+
+  <!-- SLIDE 16: Cleaning Blower/Fan -->
+  <Slide id="clean-blower" bg="light">
+    <SlideHeader title="Membersihkan Blower / Kipas" subtitle="Komponen yang memutar udara" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1;">
+      <div>
+        <StepList steps={[
+          { number: '1', text: 'Akses blower dari bagian bawah', detail: 'Biasanya terlihat setelah filter dilepas' },
+          { number: '2', text: 'Semprot dengan cairan pembersih', detail: 'Fokus pada bilah kipas yang berdebu' },
+          { number: '3', text: 'Sikat perlahan dengan sikat lembut', detail: 'Hapus kerak yang menempel' },
+          { number: '4', text: 'Bilas dengan air bersih', detail: 'Pastikan air mengalir ke washing bag' },
+        ]} />
+      </div>
+      <div>
+        <WarningBox type="info" title="Mengapa blower kotor?">
+          <p style="font-size: 0.85rem; line-height: 1.5;">
+            Blower menarik udara dari ruangan. Debu, serat, dan partikel kecil menempel pada bilah kipas seiring waktu. Blower kotor menyebabkan:
+          </p>
+          <ul style="font-size: 0.85rem; margin: 0.5rem 0; padding-left: 1.2rem; color: var(--color-text-muted);">
+            <li>Sirkulasi udara berkurang</li>
+            <li>Suara tidak normal</li>
+            <li>Vibrasi berlebih</li>
+            <li>Kualitas udara menurun</li>
+          </ul>
+        </WarningBox>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 17: Cleaning Drain Pan -->
+  <Slide id="clean-drain">
+    <SlideHeader title="Membersihkan Drain Pan & Jaluran Air" subtitle="Mencegah kebocoran dan bau" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1;">
+      <div>
+        <StepList steps={[
+          { number: '1', text: 'Lokasi drain pan', detail: 'Di bawah evaporator, menampung air kondensat' },
+          { number: '2', text: 'Buang air yang tersisa', detail: 'Tuang ke ember atau washing bag' },
+          { number: '3', text: 'Bersihkan dengan sikat kecil', detail: 'Hapus lumut dan kotoran yang menumpuk' },
+          { number: '4', text: 'Bilas jaluran pembuangan', detail: 'Tuang air bersih untuk memastikan tidak tersumbat' },
+        ]} />
+      </div>
+      <div>
+        <WarningBox type="danger" title="Drain tersumbat = Masalah besar">
+          <p style="font-size: 0.85rem; line-height: 1.5;">
+            Jaluran drain yang tersumbat menyebabkan air meluap ke dalam ruangan. Ini dapat merusak dinding, lantai, dan perabotan. Pastikan jaluran air mengalir dengan lancar setelah dibersihkan.
+          </p>
+        </WarningBox>
+        <Card title="Tips Pencegahan" style="margin-top: 1rem;">
+          <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+            Tuang sedikit air ke drain pan untuk memastikan aliran lancar sebelum menutup kembali unit.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 18: Rinsing & Water Control -->
+  <Slide id="rinsing" bg="light">
+    <SlideHeader title="Pembilasan & Pengendalian Air" subtitle="Teknik semprot yang benar" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1; align-items: start;">
+      <div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Teknik Semprot yang Benar</h3>
+        <StepList steps={[
+          { number: '1', text: 'Gunakan tekanan rendah (mist)', detail: 'Seperti kabut, bukan jet keras' },
+          { number: '2', text: 'Arahkan dari atas ke bawah', detail: 'Agar air mengalir ke washing bag' },
+          { number: '3', text: 'Jangan semprot langsung ke PCB', detail: 'Hindari komponen elektronik' },
+          { number: '4', text: 'Pastikan tidak ada genangan', detail: 'Periksa sela-sela komponen' },
+        ]} />
+      </div>
+      <div>
+        <Card title="Pengendalian Air">
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">✅</span>
+              <div>
+                <strong style="font-size: 0.9rem;">Tekanan rendah (mist)</strong>
+                <p style="font-size: 0.8rem; color: var(--color-text-muted); margin: 0;">Aman untuk sirip evaporator</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">⚠️</span>
+              <div>
+                <strong style="font-size: 0.9rem;">Tekanan sedang</strong>
+                <p style="font-size: 0.8rem; color: var(--color-text-muted); margin: 0;">Hati-hati, hanya untuk bagian tertentu</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="font-size: 1.5rem;">❌</span>
+              <div>
+                <strong style="font-size: 0.9rem;">Tekanan tinggi (jet)</strong>
+                <p style="font-size: 0.8rem; color: var(--color-text-muted); margin: 0;">Dilarang! Merusak sirip evaporator</p>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 19: Outdoor Unit Cleaning -->
+  <Slide id="outdoor">
+    <SlideHeader title="Pembersihan Unit Outdoor" subtitle="Kondenser & komponen luar" />
+    <div class="slide-image-full" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="/images/cuci-ac/outdoor-cleaning.svg" alt="Proses pembersihan unit outdoor" style="max-height: 450px; width: auto;" />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 20: Drying & Reassembly -->
+  <Slide id="reassembly" bg="light">
+    <SlideHeader title="Pengeringan & Perakitan Kembali" subtitle="Pastikan semuanya kering sebelum menyalakan" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1;">
+      <div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Proses Pengeringan</h3>
+        <StepList steps={[
+          { number: '1', text: 'Keringkan evaporator', detail: 'Gunakan kain lap bersih untuk menyerap air' },
+          { number: '2', text: 'Keringkan blower', detail: 'Putar manual untuk mengeluarkan sisa air' },
+          { number: '3', text: 'Keringkan filter', detail: 'Jemur hingga benar-benar kering' },
+          { number: '4', text: 'Periksa semua komponen', detail: 'Pastikan tidak ada air yang tersisa' },
+        ]} />
+      </div>
+      <div>
+        <h3 style="font-size: 1.1rem; margin-bottom: 0.75rem;">Perakitan Kembali</h3>
+        <StepList steps={[
+          { number: '1', text: 'Pasang filter kembali', detail: 'Pastikan posisi benar dan terkunci' },
+          { number: '2', text: 'Tutup cover depan', detail: 'Klik sampai terkunci rapat' },
+          { number: '3', text: 'Lepas washing bag', detail: 'Buang air di ember dengan aman' },
+          { number: '4', text: 'Bersihkan area sekitar', detail: 'Pastikan tidak ada genangan air' },
+        ]} />
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 21: Testing After Cleaning -->
+  <Slide id="testing">
+    <SlideHeader title="Testing Setelah Pembersihan" subtitle="Memastikan AC berfungsi normal" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1;">
+      <div>
+        <StepList steps={[
+          { number: '1', text: 'Colokkan steker ke stopkontak', detail: 'Pastikan area kering' },
+          { number: '2', text: 'Nyalakan AC dari remote', detail: 'Atur suhu ke 24-25°C' },
+          { number: '3', text: 'Dengarkan suara unit', detail: 'Tidak ada suara abnormal' },
+          { number: '4', text: 'Periksa aliran udara', detail: 'Pastikan angin keluar dengan lancar' },
+          { number: '5', text: 'Cek kebocoran air', detail: 'Perhatikan di bawah unit indoor' },
+          { number: '6', text: 'Tunggu 10-15 menit', detail: 'Pastikan suhu turun normal' },
+        ]} />
+      </div>
+      <div>
+        <Card title="Tanda AC Berfungsi Normal">
+          <Checklist items={[
+            { text: 'Angin keluar terasa dingin', checked: true },
+            { text: 'Tidak ada suara berisik', checked: true },
+            { text: 'Tidak ada kebocoran air', checked: true },
+            { text: 'Suhu ruangan turun perlahan', checked: true },
+            { text: 'Unit outdoor beroperasi normal', checked: true },
+          ]} />
+        </Card>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- SLIDE 22: Common Mistakes -->
+  <Slide id="mistakes" bg="light">
+    <SlideHeader title="Kesalahan Umum yang Harus Dihindari" subtitle="Belajar dari kesalahan orang lain" />
+    <div class="slide-image-full" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+      <img src="/images/cuci-ac/common-mistakes.svg" alt="Kesalahan umum dalam cuci AC" style="max-height: 450px; width: auto;" />
+    </div>
+  </Slide>
+
+  <!-- SLIDE 23: Final Checklist & Exercise -->
+  <Slide id="final" bg="dark">
+    <SlideHeader title="Checklist Akhir & Latihan Praktik" subtitle="Saatnya praktik mandiri!" />
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; flex: 1;">
+      <div>
+        <h3 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.75rem;">Checklist Akhir</h3>
+        <Checklist items={[
+          { text: 'Semua komponen sudah dipasang kembali', checked: true },
+          { text: 'Tidak ada air yang tersisa', checked: true },
+          { text: 'AC menyala normal', checked: true },
+          { text: 'Tidak ada kebocoran', checked: true },
+          { text: 'Area kerja bersih', checked: true },
+          { text: 'Pelanggan puas', checked: true },
+        ]} />
+      </div>
+      <div>
+        <Card title="Latihan Praktik">
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.5;">
+              Sekarang giliran Anda praktik! Ikuti langkah-langkah yang telah dipelajari.
+            </p>
+            <div style="background: var(--color-surface); padding: 0.75rem; border-radius: 6px;">
+              <strong style="font-size: 0.85rem;">Waktu praktik: 45 menit</strong>
+              <p style="font-size: 0.8rem; color: var(--color-text-muted); margin: 0.25rem 0 0;">
+                1. Siapkan alat & APD<br/>
+                2. Lakukan pemeriksaan awal<br/>
+                3. Ikuti prosedur pembersihan<br/>
+                4. Test & dokumentasikan hasil
+              </p>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </Slide>
+
+  <!-- Navigation -->
+  <div class="nav-controls">
+    <button class="nav-btn nav-btn--prev" aria-label="Previous slide">‹</button>
+    <button class="nav-btn nav-btn--next" aria-label="Next slide">›</button>
+  </div>
+
+  <!-- Progress -->
+  <Progress current={1} total={totalSlides} />
+
+  <!-- Keyboard hint -->
+  <div class="keyboard-hint">← → Space | F Fullscreen | O Overview</div>
+
+</TrainingLayout>
+
+<style>
+  .symptom-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--color-surface);
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .symptom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .symptom-icon {
+    font-size: 1.75rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  .symptom-card strong {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 0.1rem;
+  }
+</style>

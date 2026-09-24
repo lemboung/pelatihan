@@ -1,0 +1,73 @@
+---
+interface Props {
+  type?: 'warning' | 'danger' | 'info' | 'tip';
+  title?: string;
+}
+
+const { type = 'warning', title } = Astro.props;
+
+const icons: Record<string, string> = {
+  warning: '⚠',
+  danger: '🛑',
+  info: 'ℹ',
+  tip: '💡',
+};
+---
+
+<div class={`warning-box warning-box--${type}`}>
+  <span class="warning-box__icon">{icons[type]}</span>
+  <div class="warning-box__content">
+    {title && <strong class="warning-box__title">{title}</strong>}
+    <div class="warning-box__text">
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  .warning-box {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .warning-box--warning {
+    background: #fff8e1;
+    border-color: #f9a825;
+  }
+  .warning-box--danger {
+    background: #fbe9e7;
+    border-color: #e53935;
+  }
+  .warning-box--info {
+    background: #e3f2fd;
+    border-color: #1e88e5;
+  }
+  .warning-box--tip {
+    background: #e8f5e9;
+    border-color: #43a047;
+  }
+  .warning-box__icon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  .warning-box__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .warning-box__title {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .warning-box__text {
+    color: var(--color-text);
+  }
+  .warning-box__text :global(p) {
+    margin: 0.25rem 0;
+  }
+</style>
