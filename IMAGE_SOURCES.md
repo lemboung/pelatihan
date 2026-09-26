@@ -25,6 +25,7 @@
 | worker-mask.jpg | Unsplash | Unsplash License | Unsplash contributor |
 | cleaning-spray.jpg | Unsplash | Unsplash License | Unsplash contributor |
 | electrical.jpg | Unsplash | Unsplash License | Unsplash contributor |
+| smart-edu/pesantren-hero.jpg | Unsplash | Unsplash License | Unsplash contributor |
 
 ## Unsplash License Summary
 
