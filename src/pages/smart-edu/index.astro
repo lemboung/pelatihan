@@ -168,6 +168,16 @@ import Tag from '../../components/Tag.astro';
     </div>
   </Slide>
 
+  <Slide id="leadership" bg="dark" class="smart-slide leadership-slide">
+    <SlideHeader badge="AMANAH PIMPINAN" title="Teknologi yang memperkuat kepemimpinan pesantren, bukan menggesernya." subtitle="Bagi kiai, pengasuh, dan pemilik lembaga, SmartEdu memberi pandangan yang lebih utuh tanpa mengubah pesantren menjadi mesin administrasi." />
+    <div class="leadership-grid">
+      <article><span>01</span><h3>Menjaga nilai & budaya</h3><p>Aturan smartphone, disiplin, adab, dan pembinaan tetap ditentukan pesantren. Sistem membantu menjalankan keputusan tersebut dengan konsisten.</p></article>
+      <article><span>02</span><h3>Membaca amanah harian</h3><p>Pimpinan melihat tanda yang perlu perhatian: kehadiran, kesehatan, layanan keluarga, dan aktivitas operasional, tanpa perlu menunggu laporan manual.</p></article>
+      <article><span>03</span><h3>Menguatkan kepercayaan</h3><p>Orang tua merasakan tata kelola yang tertib dan komunikatif. Reputasi pesantren tumbuh dari layanan yang nyata, bukan janji digital.</p></article>
+    </div>
+    <p class="leadership-note">Kebijakan tetap diputuskan oleh majelis dan pimpinan. SmartEdu hanya membantu amanah itu terlihat, terlaksana, dan bisa dievaluasi.</p>
+  </Slide>
+
   <Slide id="generous" class="smart-slide">
     <SlideHeader badge="BERTUMBUH BERSAMA" title="Mulai dari yang paling dibutuhkan, lalu perluas dengan tenang." subtitle="Ekosistem yang baik tidak meminta pesantren berubah sekaligus. SmartEdu dapat bertumbuh mengikuti kesiapan budaya, tim, dan infrastruktur sekolah." />
     <div class="module-table">
@@ -197,6 +207,16 @@ import Tag from '../../components/Tag.astro';
     </div>
   </Slide>
 
+  <Slide id="executive-summary" bg="light" class="smart-slide">
+    <SlideHeader badge="RINGKASAN UNTUK PIMPINAN" title="Satu ekosistem, tiga hasil yang terasa." subtitle="SmartEdu menyatukan fokus santri, ketenangan keluarga, dan kapasitas tim agar pesantren dapat bertumbuh dengan tetap setia pada adabnya." />
+    <div class="summary-grid">
+      <div><span>UNTUK SANTRI</span><strong>Lebih hadir dalam belajar, ibadah, dan kehidupan asrama.</strong><p>Kartu NFC menggantikan kebutuhan uang tunai dan smartphone pribadi tetap di luar keseharian pondok.</p></div>
+      <div><span>UNTUK KELUARGA</span><strong>Lebih tenang karena kabar dan layanan tersusun rapi.</strong><p>Orang tua menerima ringkasan bermakna, komunikasi terarah, dan kontrol keuangan yang sehat.</p></div>
+      <div><span>UNTUK PESANTREN</span><strong>Lebih kuat dalam pembinaan dan tata kelola.</strong><p>Tim menghabiskan lebih sedikit waktu mencari data, lebih banyak waktu hadir untuk santri.</p></div>
+    </div>
+    <div class="summary-next"><strong>Langkah awal yang realistis</strong><span>Mulai dari komunikasi keluarga, kehadiran, dan izin; lanjutkan ke NFC serta pembinaan sesuai kesiapan pesantren.</span></div>
+  </Slide>
+
   <Slide id="close" bg="dark" class="smart-slide close-slide">
     <div class="close-content">
       <p class="eyebrow">SMARTEDU PESANTREN</p>
@@ -206,7 +226,7 @@ import Tag from '../../components/Tag.astro';
     </div>
   </Slide>
 
-  <Progress current={1} total={17} />
+  <Progress current={1} total={19} />
 </TrainingLayout>
 
 <style is:global>
@@ -361,6 +381,20 @@ import Tag from '../../components/Tag.astro';
   .feature-grid div { background: #fff; padding: 1rem; min-height: 132px; display: grid; align-content: start; gap: .5rem; }
   .feature-grid b { font-size: .93rem; }
   .feature-grid span { font-size: .8rem; line-height: 1.5; color: #577167; }
+  .leadership-grid, .summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,.16); flex: 1; }
+  .leadership-grid article { background: #10251f; padding: 1.35rem; display: grid; align-content: start; gap: .65rem; }
+  .leadership-grid span { color: #e7ae45; font-size: .72rem; font-weight: 900; letter-spacing: .1em; }
+  .leadership-grid h3 { color: #fff; font-size: 1.12rem; margin: 0; }
+  .leadership-grid p { color: rgba(255,255,255,.68); font-size: .88rem; line-height: 1.6; margin: 0; }
+  .leadership-note { border-top: 1px solid rgba(183,223,207,.4); margin: 1.4rem 0 0; padding-top: .85rem; text-align: center; color: #b7dfcf; font-size: .84rem; }
+  .summary-grid { background: var(--color-border); }
+  .summary-grid div { background: #fff; padding: 1.2rem; display: grid; align-content: start; gap: .65rem; }
+  .summary-grid span { color: #0c6d55; font-weight: 900; letter-spacing: .08em; font-size: .66rem; }
+  .summary-grid strong { font-size: 1.06rem; line-height: 1.4; }
+  .summary-grid p { color: #577167; font-size: .84rem; line-height: 1.6; margin: 0; }
+  .summary-next { margin-top: 1.2rem; background: #16352c; color: #fff; padding: 1rem 1.2rem; display: grid; grid-template-columns: 190px 1fr; gap: 1rem; align-items: center; }
+  .summary-next strong { font-size: .9rem; }
+  .summary-next span { color: #d1eadc; font-size: .84rem; line-height: 1.5; }
   .trust-grid article { background: #fff; border-top-color: #0c6d55; }
   .adoption-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; flex: 1; }
   .adoption-grid div { border-left: 3px solid #e7ae45; padding: .5rem 0 .5rem 1rem; }
@@ -373,12 +407,19 @@ import Tag from '../../components/Tag.astro';
   .close-content > p:not(.eyebrow) { max-width: 650px; margin: 1.5rem auto 2rem; color: rgba(255,255,255,.7); line-height: 1.65; }
   .close-content > div { display: flex; justify-content: center; gap: .6rem; flex-wrap: wrap; }
   @media (max-width: 768px) {
+    .presentation { align-items: flex-start; }
+    .smart-slide { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+    .smart-slide.active { align-items: flex-start !important; }
+    .smart-slide .slide__inner { height: auto; min-height: 100%; max-height: none; justify-content: flex-start; padding: 3.4rem 1rem 5.5rem !important; gap: 1.15rem; }
+    .smart-slide .slide-header { margin-bottom: .25rem; }
+    .smart-slide .slide-header__title { font-size: 1.55rem; line-height: 1.2; }
+    .smart-slide .slide-header__subtitle { font-size: .9rem; line-height: 1.5; }
     .cover-layout, .parent-layout, .wellbeing-layout, .prototype-split, .parent-app-layout { grid-template-columns: 1fr; gap: 1.4rem; }
     .cover-visual { display: none; }
     .cover-copy h1, .close-content h1 { font-size: 2rem; }
     .statement-grid, .ecosystem-grid, .growth-grid, .trust-grid, .adoption-grid { grid-template-columns: 1fr; gap: .55rem; }
-    .flow-wrap { align-items: stretch; gap: .45rem; }
-    .flow-card { min-height: 0; padding: .75rem; }
+    .flow-wrap { flex-direction: column; align-items: stretch; gap: .45rem; }
+    .flow-card { min-height: 0; padding: .9rem; }
     .flow-card span { margin-bottom: .55rem; }
     .flow-card p { font-size: .7rem; }
     .flow-card strong { font-size: .85rem; }
@@ -396,5 +437,9 @@ import Tag from '../../components/Tag.astro';
     .feature-grid div { min-height: 96px; padding: .7rem; }
     .dashboard-lower section:first-child div { grid-template-columns: 1fr auto; }
     .dashboard-lower section:first-child small { grid-column: 1 / -1; }
+    .leadership-grid, .summary-grid { grid-template-columns: 1fr; gap: .55rem; background: transparent; }
+    .leadership-grid article { padding: 1rem; border-left: 3px solid #e7ae45; }
+    .summary-grid div { border-left: 3px solid #0c6d55; padding: 1rem; }
+    .summary-next { grid-template-columns: 1fr; gap: .35rem; margin-top: .7rem; }
   }
 </style>
